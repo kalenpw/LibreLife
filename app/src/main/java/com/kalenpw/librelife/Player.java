@@ -15,15 +15,20 @@ public class Player {
         _Rectangle = playerRect;
     }
 
+    /**
+     * Gets the player's LifeCounter
+     * @return LifeCounter - LifeCounter belonging to player
+     */
     public LifeCounter getLifeCounter(){
         return _LifeCounter;
     }
 
+    /**
+     * Gets the player's Rect used to display life total
+     * @return Rect - Rect that this player's life total is displayed in
+     */
     public Rect getRectangle(){
         return _Rectangle;
     }
-
-
-
 
 }

@@ -7,16 +7,20 @@ import android.graphics.Paint;
  */
 
 public class LifeCounter {
-    private Paint _paint;
-    private int _lifeTotal;
-    private int _commanaderDamage;
+    private Paint _Paint;
+    private int _LifeTotal;
+    private int _CommanaderDamage;
 
     public LifeCounter(int startingLifeTotal){
-        _lifeTotal = startingLifeTotal;
+        _LifeTotal = startingLifeTotal;
     }
 
+    /**
+     * Gets the current life total amount
+     * @return Int - remaining life
+     */
     public int getLifeTotal(){
-        return _lifeTotal;
+        return _LifeTotal;
     }
 
     /**
@@ -24,7 +28,7 @@ public class LifeCounter {
      * @return String lifeTotal
      */
     public String getLifeTotalStr(){
-        return "" + _lifeTotal;
+        return "" + _LifeTotal;
     }
 
     /**
@@ -32,9 +36,7 @@ public class LifeCounter {
      * @param int amount - amount of life to be added/subtracted
      */
     public void decreaseLifeBy(int amount){
-        _lifeTotal -= amount;
+        _LifeTotal -= amount;
     }
-
-
 
 }

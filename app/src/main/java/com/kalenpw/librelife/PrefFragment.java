@@ -15,11 +15,13 @@ public class PrefFragment extends PreferenceActivity implements SharedPreference
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 
+        addPreferencesFromResource(R.xml.preferences);
         PreferenceManager.getDefaultSharedPreferences(this).registerOnSharedPreferenceChangeListener(this);
     }
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key){
+        //TODO update stuff when settings are changed
 
     }
 

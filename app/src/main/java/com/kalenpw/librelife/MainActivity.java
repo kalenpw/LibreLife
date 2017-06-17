@@ -12,8 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
         LifeCounterView lifeCounterView = new LifeCounterView(this);
         setContentView(lifeCounterView);
-
-
     }
 }
 

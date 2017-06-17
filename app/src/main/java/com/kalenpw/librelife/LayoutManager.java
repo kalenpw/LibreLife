@@ -17,6 +17,9 @@ public class LayoutManager {
 
     }
 
+    /**
+     * Updates the ordering of rectangles for life counters
+     */
     public void updateLayout(){
         int numberOfPlayers = Settings.NUMBER_OF_PLAYERS;
 
@@ -35,20 +38,26 @@ public class LayoutManager {
                 Player playerThree = new Player(pThree);
                 Player playerFour = new Player(pFour);
 
-                Gameboard.players.add(playerOne);
-                Gameboard.players.add(playerTwo);
-                Gameboard.players.add(playerThree);
-                Gameboard.players.add(playerFour);
+                Gameboard._Players.add(playerOne);
+                Gameboard._Players.add(playerTwo);
+                Gameboard._Players.add(playerThree);
+                Gameboard._Players.add(playerFour);
         }
 
     }
 
-
-
+    /**
+     * Gets the width of device screen
+     * @return Int - width of screen
+     */
     private int getScreenWidth(){
         return Resources.getSystem().getDisplayMetrics().widthPixels;
     }
 
+    /**
+     * Gets the height of device screen
+     * @return Int - height of screen
+     */
     private int getScreenHeight(){
         return Resources.getSystem().getDisplayMetrics().heightPixels;
     }
