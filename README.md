@@ -6,3 +6,7 @@ portion to be quite ugly and lacking of a layout that makes it easy to place in 
 
 LibreLife has simple clickable rectangle that can be arranged to match the layout of the table and track everyone's life totals.
 Designed with EDH(best format) in mind, but would work with any format. 
+
+Currently very limited in functionality, appearance, and customizability, but will continue to add more as  time permits.
+
+<img src="http://i.imgur.com/TKRRLCE.png" alt="Screenshot" width="400px">
