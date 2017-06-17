@@ -21,6 +21,9 @@ public class LayoutManager {
         int numberOfPlayers = Settings.NUMBER_OF_PLAYERS;
 
         switch(numberOfPlayers){
+            case 3:
+
+
             case 4:
                 Rect pOne = new Rect(0, 0, getScreenWidth() / 2, getScreenHeight() / 2);
                 Rect pTwo = new Rect(getScreenWidth() / 2, 0, getScreenWidth(), getScreenHeight() / 2);
@@ -39,6 +42,8 @@ public class LayoutManager {
         }
 
     }
+
+
 
     private int getScreenWidth(){
         return Resources.getSystem().getDisplayMetrics().widthPixels;
