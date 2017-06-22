@@ -37,6 +37,9 @@ public class LifeCounter {
      */
     public void decreaseLifeBy(int amount){
         _LifeTotal -= amount;
+        if(_LifeTotal < 0){
+            _LifeTotal = 0;
+        }
     }
 
 }

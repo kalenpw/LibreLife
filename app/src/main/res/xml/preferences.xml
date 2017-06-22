@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <EditTextPreference
-        android:defaultValue="40"
-        android:key="@string/pref_number_of_players"
-        android:title="Number of players"/>
+    <ListPreference
+        android:defaultValue="4"
+        android:key="number_of_players"
+        android:title="@string/pref_number_of_players"
+        android:entries="@array/NumberOfPlayersTitle"
+        android:entryValues="@array/NumberOfPlayersValue"/>
 
 
 </PreferenceScreen>

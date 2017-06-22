@@ -14,8 +14,7 @@ public class Settings {
     static public int INITIAL_LIFE_TOTAL;
 
     public static void defaultSettings(){
-        NUMBER_OF_PLAYERS = 4;
-        INITIAL_LIFE_TOTAL = 40;
+
     }
 
     /**
@@ -30,7 +29,12 @@ public class Settings {
      * Updates the apps settings
      */
     public static void updateSettings(){
+        String numberOfPlayersString;
+
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(_Context);
+        numberOfPlayersString = preferences.getString("number_of_players", "-1");
+        NUMBER_OF_PLAYERS = Integer.parseInt(numberOfPlayersString);
+
     }
 
 }

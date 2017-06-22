@@ -22,26 +22,52 @@ public class LayoutManager {
      */
     public void updateLayout(){
         int numberOfPlayers = Settings.NUMBER_OF_PLAYERS;
+        Gameboard._Players.clear();
+
+        //Delcare all variables for layout
+        Rect pOneRect;
+        Rect pTwoRect;
+        Rect pThreeRect;
+        Rect pFourRect;
+
+        Player pOne;
+        Player pTwo;
+        Player pThree;
+        Player pFour;
 
         switch(numberOfPlayers){
             case 3:
+                pOneRect = new Rect(0, 0, getScreenWidth(), getScreenHeight() / 3);
+                pTwoRect = new Rect(0, getScreenHeight() / 3, getScreenWidth(), (2 * (getScreenHeight() / 3)));
+                pThreeRect = new Rect(0, (2 *(getScreenHeight() / 3)), getScreenWidth(), getScreenHeight());
 
+                pOne = new Player(pOneRect);
+                pTwo = new Player(pTwoRect);
+                pThree = new Player(pThreeRect);
+
+                Gameboard._Players.add(pOne);
+                Gameboard._Players.add(pTwo);
+                Gameboard._Players.add(pThree);
+
+                break;
 
             case 4:
-                Rect pOne = new Rect(0, 0, getScreenWidth() / 2, getScreenHeight() / 2);
-                Rect pTwo = new Rect(getScreenWidth() / 2, 0, getScreenWidth(), getScreenHeight() / 2);
-                Rect pThree = new Rect(0, getScreenHeight() / 2, getScreenWidth() / 2, getScreenHeight());
-                Rect pFour = new Rect(getScreenWidth() / 2, getScreenHeight() / 2, getScreenWidth(), getScreenHeight());
+                pOneRect = new Rect(0, 0, getScreenWidth() / 2, getScreenHeight() / 2);
+                pTwoRect = new Rect(getScreenWidth() / 2, 0, getScreenWidth(), getScreenHeight() / 2);
+                pThreeRect = new Rect(0, getScreenHeight() / 2, getScreenWidth() / 2, getScreenHeight());
+                pFourRect = new Rect(getScreenWidth() / 2, getScreenHeight() / 2, getScreenWidth(), getScreenHeight());
 
-                Player playerOne = new Player(pOne);
-                Player playerTwo = new Player(pTwo);
-                Player playerThree = new Player(pThree);
-                Player playerFour = new Player(pFour);
+                pOne = new Player(pOneRect);
+                pTwo = new Player(pTwoRect);
+                pThree = new Player(pThreeRect);
+                pFour = new Player(pFourRect);
 
-                Gameboard._Players.add(playerOne);
-                Gameboard._Players.add(playerTwo);
-                Gameboard._Players.add(playerThree);
-                Gameboard._Players.add(playerFour);
+                Gameboard._Players.add(pOne);
+                Gameboard._Players.add(pTwo);
+                Gameboard._Players.add(pThree);
+                Gameboard._Players.add(pFour);
+
+                break;
         }
 
     }

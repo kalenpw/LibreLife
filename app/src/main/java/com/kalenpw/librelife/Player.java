@@ -11,6 +11,7 @@ public class Player {
     private LifeCounter _LifeCounter;
 
     public Player(Rect playerRect){
+        //TODO get life total from settings
         _LifeCounter = new LifeCounter(40);
         _Rectangle = playerRect;
     }
