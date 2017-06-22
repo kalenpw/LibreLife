@@ -9,4 +9,4 @@ Designed with EDH(best format) in mind, but would work with any format.
 
 Currently very limited in functionality, appearance, and customizability, but will continue to add more as  time permits.
 
-<img src="http://i.imgur.com/TKRRLCE.png" alt="Screenshot" width="400px">
+<img src="http://i.imgur.com/S5yXhP1.png" alt="Screenshot" width="400px">
